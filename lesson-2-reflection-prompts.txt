@@ -1,45 +1,60 @@
 What happens when you initialize a repository? Why do you need to do it?
 
     When I enter 'git init' in Git Bash, a hidden directory named '.git' was 
-	created in reflections directory. The reason I need to do it is that it 
-	state that this directory needs version control.
+    created in reflections directory. The reason I need to do it is that it 
+    state that this directory needs version control.
+
 
 How is the staging area different from the working directory and the repository?
+
 What value do you think it offers?
 
     After I 'git add' a file into staging area, it means that file is tracking 
-	by Git and ready to commit. It create a buffer zone between the working 
-	directory and the repository, so that we can commit serveral files to the 
-	repository which make Git possible to tracking access files.
+    by Git and ready to commit. It create a buffer zone between the working 
+    directory and the repository, so that we can commit serveral files to the 
+    repository which make Git possible to tracking access files.
+
+
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
-
-
+    If one commit involves serveral files, I can add them to the staging area 
+    first, then commit to make a logical change.
 
 
 What are some situations when branches would be helpful in keeping your history
-organized?How would branches help?
+organized? 
+How would branches help?
 
-
-
-
+    
+    When I would like to develop some new features and it may last for a while, 
+    I would create a branch to do that, so I won't mess with the master version; 
+    or when I need to create different versions of my project, I will need 
+    some branches. 
 
 How do the diagrams help you visualize the branch structure?
 
+    
+    
+    The diagrams help me know branches come from which commit or from detached HEAD.
 
-
-
-What is the result of merging two branches together? 
-
-
-
-Why do we represent it in
+What is the result of merging two branches together? Why do we represent it in 
 the diagram the way we do?
 
-
-
+    If I checkout master, and merge branch1 into master, master will commit and 
+    combine two versions into one. If I delete branch1, it only deletes the 
+    labels of branch1, leaving the commits with master's and log together in 
+    time order.
+    The way the diagram represent is to show linear relations between each 
+    commits.
+	
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+    
+    pros of automatic merging: time-saving, convenient.
+    cons of automatic merging: sometimes make many conflicts.
+    pros of merges manually: Accurate.
+    cons of merges manually: take a lot of time and energy.
